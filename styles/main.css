@@ -1,0 +1,40 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.landing {
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.founders {
+    display: inline-block;
+}
+
+.link {
+    display: inline-block;
+}
+
+.founders-img {
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 20%;
+    height: 180px;
+    width: 180px;
+}
+
+.linkedin {
+    margin: 0px 5px;
+}
+
+.avery-logo {
+    height: 50px;
+}
