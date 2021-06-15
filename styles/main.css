@@ -24,17 +24,52 @@ body {
 }
 
 .founders-img {
-    margin: 0px 10px;
-    padding: 10px;
+    margin: 10px 20px;
+    padding: 0px;
     border-radius: 20%;
     height: 180px;
     width: 180px;
+    transition: cubic-bezier(0, 1, 1, 1) 0.5s;
 }
 
-.linkedin {
-    margin: 0px 5px;
+.founders-img:hover {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.75, 0, 0.25, 1) 0.5s;
+    box-shadow: 0px 0px 10px 10px aliceblue;
+}
+
+.avery241 {
+    margin: 12px 0px;
+}
+
+.avery241 p {
+    margin: 0px;
+    font-family: fangsong;
+    font-size: 24px;
 }
 
 .avery-logo {
     height: 50px;
+    transition: all 1s;
+}
+
+.avery-logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+
+/* Animations */
+
+.fade-in-image {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
