@@ -1,3 +1,7 @@
+:root {
+    --white241: rgb(241, 241, 241, 1);
+}
+
 html,
 body {
     height: 100%;
@@ -5,22 +9,57 @@ body {
 }
 
 .landing {
-    background-color: lavender;
+    background-color: var(--white241);
+    /*
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0;
     margin: 0;
+    */
     height: 100%;
+    width: 100%;
 }
 
-.founders {
-    display: inline-block;
+.header {
+    background-color: var(--white241);
+    display: flex;
+    padding-top: 30px;
+    max-height: 84px;
+    align-items: center;
+    justify-content: center;
 }
 
 .link {
     display: inline-block;
+}
+
+.avery-logo {
+    height: 50px;
+    transition: all 1s;
+}
+
+.avery-logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 84px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .founders-img {
@@ -40,22 +79,13 @@ body {
 
 .avery241 {
     margin: 12px 0px;
+    text-align: center;
 }
 
 .avery241 p {
     margin: 0px;
     font-family: fangsong;
     font-size: 24px;
-}
-
-.avery-logo {
-    height: 50px;
-    transition: all 1s;
-}
-
-.avery-logo:hover {
-    transform: rotate(360deg);
-    transition: all 1s;
 }
 
 
