@@ -1,0 +1,105 @@
+:root {
+    --white241: rgb(241, 241, 241, 1);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.landing {
+    background-color: var(--white241);
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    */
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background-color: var(--white241);
+    display: flex;
+    padding-top: 30px;
+    max-height: 84px;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: inline-block;
+}
+
+.avery-logo {
+    height: 50px;
+    transition: all 1s;
+}
+
+.avery-logo:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 84px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.founders {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.founders-img {
+    margin: 10px 20px;
+    padding: 0px;
+    border-radius: 20%;
+    height: 180px;
+    width: 180px;
+    transition: cubic-bezier(0, 1, 1, 1) 0.5s;
+}
+
+.founders-img:hover {
+    transform: scale(1.08);
+    transition: transform cubic-bezier(0.75, 0, 0.25, 1) 0.5s;
+    box-shadow: 0px 0px 10px 10px aliceblue;
+}
+
+.avery241 {
+    margin: 12px 0px;
+    text-align: center;
+}
+
+.avery241 p {
+    margin: 0px;
+    font-family: fangsong;
+    font-size: 24px;
+}
+
+
+/* Animations */
+
+.fade-in-image {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

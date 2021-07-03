@@ -1,105 +1,142 @@
-:root {
-    --white241: rgb(241, 241, 241, 1);
+/*
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-html,
 body {
-    height: 100%;
-    margin: 0;
+    display: block;
+    margin: 0px;
+    font-family: 'Lato';
+    background-color: #241;
 }
 
-.landing {
-    background-color: var(--white241);
-    /*
+.header-area {
+    position: absolute;
+    top: 0;
+    z-index: 241;
+    width: 100%;
+    background: transparent;
+    transition: 0.3s;
+    padding: 30px;
+}
+
+.header-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    */
-    height: 100%;
+    justify-content: space-between;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 0px 30px;
+}
+
+.menu>li:last-child {
+    margin-right: 0px;
+}
+
+.menu>li {
+    margin: 0px 15px;
+    list-style-type: none;
+}
+
+.menu>li>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-contact {
+    border: 2px solid aliceblue;
+    border-radius: 3px;
+}
+
+.imglogo {
+    width: 48px;
+}
+
+
+*/
+
+
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+html {
+    overflow-x: hidden
+}
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    background-color: var(--bs-light);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+
+/*
+ * Page elements
+ */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
 
-.header {
-    background-color: var(--white241);
-    display: flex;
-    padding-top: 30px;
-    max-height: 84px;
-    align-items: center;
-    justify-content: center;
-}
-
-.link {
-    display: inline-block;
-}
-
-.avery-logo {
-    height: 50px;
-    transition: all 1s;
-}
-
-.avery-logo:hover {
-    transform: rotate(360deg);
-    transition: all 1s;
-}
-
-.layout {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    top: 84px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-}
-
-.founders {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.founders-img {
-    margin: 10px 20px;
-    padding: 0px;
-    border-radius: 20%;
-    height: 180px;
-    width: 180px;
-    transition: cubic-bezier(0, 1, 1, 1) 0.5s;
-}
-
-.founders-img:hover {
-    transform: scale(1.08);
-    transition: transform cubic-bezier(0.75, 0, 0.25, 1) 0.5s;
-    box-shadow: 0px 0px 10px 10px aliceblue;
-}
-
-.avery241 {
-    margin: 12px 0px;
-    text-align: center;
-}
-
-.avery241 p {
-    margin: 0px;
-    font-family: fangsong;
-    font-size: 24px;
-}
-
-
-/* Animations */
-
-.fade-in-image {
-    animation: fadeIn 3s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.logo-img {
+    width: 48px;
 }
