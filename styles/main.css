@@ -80,18 +80,32 @@ body {
     /* Prevent inheritance from `body` */
 }
 
+.btn-outline-purple {
+    color: var(--bs-light);
+    border-color: #a279b6;
+}
+
+.btn-outline-purple:hover {
+    transform: translateY(-2px);
+    background-color: #a279b6;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.36, 1);
+}
+
 
 /*
  * Base structure
  */
 
 html {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    background-color: var(--bs-light);
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+    font-family: 'Montserrat';
 }
 
 .cover-container {
