@@ -159,3 +159,10 @@ img {
     color: blue;
     text-align: center;
 }
+
+.mask {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
