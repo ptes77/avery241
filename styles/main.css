@@ -154,3 +154,8 @@ img {
 .logo-img {
     width: 48px;
 }
+
+.timeline {
+    color: blue;
+    text-align: center;
+}
