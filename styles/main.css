@@ -161,3 +161,8 @@ img {
     overflow: hidden;
     background-attachment: fixed;
 }
+
+.title-font {
+    font-family: 'Courier New', monospace;
+    font-size: 72px;
+}
