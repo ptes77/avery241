@@ -105,7 +105,8 @@ body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     background-color: var(--bs-dark);
     color: var(--bs-light);
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .cover-container {
@@ -117,24 +118,25 @@ body {
  * Header
  */
 
-.nav-masthead .nav-link {
+.nav-link {
     padding: .25rem 0;
-    font-weight: 700;
+    font-weight: 200;
     color: rgba(255, 255, 255, .5);
     background-color: transparent;
     border-bottom: .25rem solid transparent;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
     border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link+.nav-link {
+.nav-link+.nav-link {
     margin-left: 1rem;
 }
 
-.nav-masthead .active {
+.active {
     color: #fff;
     border-bottom-color: #fff;
 }
@@ -168,7 +170,7 @@ img {
 }
 
 .title-font {
-    font-family: 'Courier New', monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 72px;
     z-index: 1;
 }
