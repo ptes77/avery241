@@ -154,3 +154,10 @@ img {
 .logo-img {
     width: 48px;
 }
+
+.mask {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
