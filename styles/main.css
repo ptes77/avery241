@@ -1,71 +1,4 @@
 /*
-html {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-body {
-    display: block;
-    margin: 0px;
-    font-family: 'Lato';
-    background-color: #241;
-}
-
-.header-area {
-    position: absolute;
-    top: 0;
-    z-index: 241;
-    width: 100%;
-    background: transparent;
-    transition: 0.3s;
-    padding: 30px;
-}
-
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-left,
-.header-right {
-    display: flex;
-}
-
-.menu {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding: 0px 30px;
-}
-
-.menu>li:last-child {
-    margin-right: 0px;
-}
-
-.menu>li {
-    margin: 0px 15px;
-    list-style-type: none;
-}
-
-.menu>li>a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.btn-contact {
-    border: 2px solid aliceblue;
-    border-radius: 3px;
-}
-
-.imglogo {
-    width: 48px;
-}
-
-
-*/
-
-
-/*
  * Globals
  */
 
@@ -118,18 +51,20 @@ body {
  * Header
  */
 
+header,
+div,
+nav,
+ul,
+img,
+body {
+    transition: all 0.2s;
+}
+
 .nav-link {
     padding: .25rem 0;
     font-weight: 200;
     color: rgba(255, 255, 255, .5);
     background-color: transparent;
-    border-bottom: .25rem solid transparent;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-    border-bottom-color: rgba(255, 255, 255, .25);
 }
 
 .nav-link+.nav-link {
@@ -137,8 +72,8 @@ body {
 }
 
 .active {
-    color: #fff;
-    border-bottom-color: #fff;
+    color: var(--bs-blue);
+    border-bottom-color: var(--bs-blue);
 }
 
 
@@ -155,6 +90,10 @@ img {
 
 .logo-img {
     width: 48px;
+}
+
+.pt-header {
+    padding-top: 90px;
 }
 
 .timeline {

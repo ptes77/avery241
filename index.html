@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd5a40b076.js" crossorigin="anonymous"></script>
-
+    <script src="scripts/scripts.js"></script>
     <title>Avery 241</title>
 </head>
 
@@ -39,8 +39,8 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-black">
             <div class="container-fluid mx-4">
                 <a class="navbar-brand pt-1 pb-0" href="#">
-                    <div class="d-flex flex-column">
-                        <img class='logo-img' src="images/logo_purple.png">
+                    <div id="header-logo" class="d-flex flex-column">
+                        <img id="logo-triangle" class="logo-img" src="images/logo_purple.png">
                         <p class="m-0">Avery 241</p>
                     </div>
                 </a>
@@ -48,7 +48,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+                    <ul id="section-links" class="navbar-nav mx-auto mb-2 mb-md-0">
                         <li class="nav-item px-2">
                             <a class="nav-link" aria-current="page" href="#ajay-timeline">Ajay Natarajan</a>
                         </li>
@@ -59,19 +59,14 @@
                             <a class="nav-link" href="#projects">Projects</a>
                         </li>
                     </ul>
-                    <button class="btn btn-outline-purple">Say Hi!</button>
-                </div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button class="btn btn-outline-purple" onclick="location.href='#contact'">Say Hi!</button>
                 </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="position-relative">
+        <div class="position-relative my-5">
             <div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -89,7 +84,7 @@
                 Caltech's Best Roommates
             </div>
         </div>
-        <div id="about">
+        <div id="about" class="py-5 pt-header">
             <div>Meet the Founders</div>
             <div>testing</div>
             <div>testing</div>
@@ -114,16 +109,16 @@
             <div>testing</div>
             <div>testing</div>
         </div>
-        <div id="ajay-timeline" class="timeline">
-            ajay-timeline
+        <div id="ajay-timeline" class="timeline pt-header">
+            ajay timeline
         </div>
-        <div id="eugene-timeline" class="timeline">
+        <div id="eugene-timeline" class="timeline pt-header">
             eugene timeline
         </div>
-        <div id="projects">
+        <div id="projects" class="pt-header">
             projects
         </div>
-        <div id="contact">
+        <div id="contact" class="pt-header">
             contact
             <div>testing</div>
             <div>testing</div>
