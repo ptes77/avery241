@@ -108,10 +108,25 @@ img {
     background-attachment: fixed;
 }
 
+.title-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1
+}
+
 .title-font {
     font-family: 'Montserrat', sans-serif;
     font-size: 72px;
-    z-index: 1;
+    margin-top: 350px;
+}
+
+.learn-more {
+    margin-top: 250px;
+}
+
+img.learn-more-arrow {
+    width: 70px;
+    height: auto;
 }
 
 .bg-purple {
