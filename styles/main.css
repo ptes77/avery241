@@ -93,7 +93,11 @@ img {
 }
 
 .pt-header {
-    padding-top: 90px;
+    padding-top: 60px;
+}
+
+.pt-footer {
+    padding-bottom: 80px;
 }
 
 .timeline {
@@ -127,6 +131,63 @@ img {
 img.learn-more-arrow {
     width: 70px;
     height: auto;
+}
+
+.contact-us-form {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-us-outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us-inner-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 650px;
+    color: #909090;
+    padding-top: 40px;
+    margin-top: 105px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #C8C8C8;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.contact-us-title {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+.form-font {
+    font-weight: 500;
+    font-size: 12px;
+    text-shadow: none;
+}
+
+.contact-input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-shadow: none;
+    color: #555555;
+}
+
+.contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.contact-submit-button {
+    margin-top: 30px;
+    background-color: black;
 }
 
 .bg-purple {
@@ -171,6 +232,10 @@ img.learn-more-arrow {
 
 .bg-white {
     background-color: #fff!important
+}
+
+.bg-avery241 {
+    background-color: #F1F1F1
 }
 
 .bg-transparent {
