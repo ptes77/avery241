@@ -175,7 +175,20 @@ img.learn-more-arrow {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     text-shadow: none;
+}
+
+.input-label {
+    margin-bottom: 5px;
+}
+
+form .mb-3 .form-group .form-control {
     color: #555555;
+    font-weight: 400;
+}
+
+form .mb-3 .form-group .form-control::placeholder {
+    color: #555555;
+    font-weight: 100;
 }
 
 .contact-block {
@@ -186,7 +199,7 @@ img.learn-more-arrow {
 }
 
 .contact-submit-button {
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: black;
 }
 
