@@ -24,13 +24,31 @@
             }
         }
     </style>
-    <link rel="icon" href="data:,">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd5a40b076.js" crossorigin="anonymous"></script>
-    <script src="scripts/scripts.js"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script type="application/javascript">
+        window.onload = function() {
+            lax.init()
+
+            lax.addDriver('scrollY', function() {
+                return window.scrollY
+            })
+
+            lax.addElements('.bg-white', {
+                scrollY: {
+                    opacity: [
+                        ['0', 'screenHeight - 90'],
+                        [0, 1],
+                    ],
+                }
+            })
+        }
+    </script>
     <title>Avery 241</title>
 </head>
 
@@ -66,7 +84,7 @@
     </header>
 
     <main>
-        <div class="position-relative my-5">
+        <div class="container-fluid position-relative mt-5 p-0">
             <div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -80,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            <div class="position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100 text-white title-container" style="background: rgba(0,0,0,0.5);">
+            <div class="position-absolute top-0 left-0 d-flex justify-content-center align-items-center w-100 h-100 text-white title-font" style="background: rgba(0,0,0,0.5);">
                 <div class="title-font dynamic-duo">
                     Caltech's Dynamic Duo
                 </div>
@@ -90,7 +108,43 @@
                     </div>
                 </button>
             </div>
-
+        </div>
+        <div class="card p-3" style="border-radius: 0">
+            <div class="text-center">
+                <h1 class="m-5 fw-bolder fs-1 text-dark">Meet the <i>Sexy Beasts</i></h1>
+            </div>
+            <div class="d-flex flex-row px-5 m-3 mb-5 text-dark">
+                <div id="ajay-intro" class="card align-items-center face-card bg-ajay-secondary">
+                    <div class="ajay-face-img m-3"></div>
+                    <h3 class="fw-normal text-ajay-primary mb-4">Ajay Natarajan</h3>
+                    <div class="d-flex justify-content-around w-75">
+                        <a href="http://www.kleinerperkins.com">
+                            <img src="images/logo_kp.png" class="card-logo-img">
+                        </a>
+                        <a href="http://www.robinhood.com">
+                            <img src="images/logo_robinhood.png" class="card-logo-img">
+                        </a>
+                        <a href="http://www.asana.com">
+                            <img src="images/logo_asana.png" class="card-logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div id="eugene-intro" class="card align-items-center face-card bg-eugene-secondary">
+                    <div class="eugene-face-img m-3"></div>
+                    <h3 class="fw-normal text-eugene-primary mb-4">Eugene Shao</h3>
+                    <div class="d-flex justify-content-around w-75">
+                        <a href="http://www.kleinerperkins.com">
+                            <img src="images/logo_kp.png" class="card-logo-img">
+                        </a>
+                        <a href="http://www.facebook.com">
+                            <img src="images/logo_facebook.png" class="card-logo-img">
+                        </a>
+                        <a href="http://www.citadel.com">
+                            <img src="images/logo_citadel.png" class="card-logo-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         <div id="about" class="py-5 pt-header">
             <div>Meet the Founders</div>
@@ -135,7 +189,7 @@
                     <div class="mb-3">
                         <div class="form-group contact-block">
                             <label for="name" class="input-label">Name:</label>
-                            <input type="email" class="form-control contact-input" id="sender-name" placeholder="Enter your name">
+                            <input type="name" class="form-control contact-input" id="sender-name" placeholder="Enter your name">
                         </div>
                     </div>
                     <div class="mb-3">

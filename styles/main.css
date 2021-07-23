@@ -2,6 +2,14 @@
  * Globals
  */
 
+:root {
+    --color-ajay-primary: #00C805;
+    --color-ajay-secondary: #004022;
+    --color-eugene-primary: #1876f2;
+    --color-eugene-secondary: #3B5998;
+    --color-avery-purple: #a279b6;
+}
+
 
 /* Custom default button */
 
@@ -62,7 +70,7 @@ body {
 
 .nav-link {
     padding: .25rem 0;
-    font-weight: 200;
+    font-weight: 300;
     color: rgba(255, 255, 255, .5);
     background-color: transparent;
 }
@@ -81,15 +89,49 @@ body {
  * Page elements
  */
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
-
 .logo-img {
     width: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-logo-img {
+    width: 48px;
+    clip-path: circle(24px at 50%);
+}
+
+.ajay-face-img {
+    height: 200px;
+    width: 200px;
+    clip-path: circle(42% at 50% 50%);
+    background: url(../images/ajay.jpg);
+    background-position: 4px 0px;
+    background-size: 96%;
+}
+
+.eugene-face-img {
+    height: 200px;
+    width: 200px;
+    clip-path: circle(42% at 50% 50%);
+    background: url(../images/eugene.jpg);
+    background-position: 0px 12px;
+    background-size: 100%;
+}
+
+.face-card {
+    height: 420px;
+    width: 280px;
+    border-radius: 1rem;
+}
+
+#ajay-intro {
+    margin-left: auto;
+    margin-right: 36px;
+}
+
+#eugene-intro {
+    margin-left: 36px;
+    margin-right: auto;
 }
 
 .pt-header {
@@ -203,8 +245,24 @@ form .mb-3 .form-group .form-control::placeholder {
     background-color: black;
 }
 
+.bg-ajay-primary {
+    background-color: var(--color-ajay-primary);
+}
+
+.bg-ajay-secondary {
+    background-color: var(--color-ajay-secondary);
+}
+
+.bg-eugene-primary {
+    background-color: var(--color-eugene-primary);
+}
+
+.bg-eugene-secondary {
+    background-color: var(--color-eugene-secondary);
+}
+
 .bg-purple {
-    background-color: #a279b6!important;
+    background-color: var(--color-avery-purple)!important;
 }
 
 .bg-black {
@@ -257,4 +315,20 @@ form .mb-3 .form-group .form-control::placeholder {
 
 .bg-gradient {
     background-image: var(--bs-gradient)!important
+}
+
+.text-ajay-primary {
+    color: var(--color-ajay-primary);
+}
+
+.text-ajay-secondary {
+    color: var(--color-ajay-secondary);
+}
+
+.text-eugene-primary {
+    color: var(--color-eugene-primary);
+}
+
+.text-eugene-secondary {
+    color: var(--color-eugene-secondary);
 }
